@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top10</title>
+    <style>
+        h1{
+            text-align: center;
+            color: #1a237e;
+        }
+
+        .card{
+            cursor: pointer;
+            text-align: center;
+            background-color: rgba(50, 50, 50, 0.5);
+            border-radius: 5%;
+            width: 400px;
+            margin:10px auto ;
+        }
+
+        .card img{
+            width: 300px;
+            height: 300px;
+            
+        }
+
+        .card h2{
+            font-size: 40px;
+            color:#1e2e4f ;
+        }
+
+        .card h3{
+            font-size: 35px;
+            margin-top: -25px;
+        }
+
+#cajita{
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    max-width: 80%;
+}
+
+.cajita img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    margin-left: 95px;
+
+}
+.cajita h2{
+    text-align: center;
+    color: white;
+}
+
+.cajita p{
+color: white;
+text-align: center;
+}
+
+.cajita button{
+    background-color: #800020 ;
+    border-radius: 10px;
+    border-color: #8b0000;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+.cajita button:hover{
+    background-color: black;
+    transform: scale(1.20);
+    border-color: navy;
+
+}
+
+    </style>
+</head>
+<body>
+<h1> Top 10 Personajes De Comics </h1>
+
+<div class="card"  onclick= "abrircajita('RED HOOD (Jason Todd)', 'img/REDHOOD.gif'  ,'El antiguo Robin que regresó de la muerte con una actitud implacable. Es un antihéroe que no teme cruzar la línea moral para impartir su propia justicia letal.')">
+    <h2>Top 1</h2>
+    <h3>Red Hood</h3>
+    <img src="img/redhood.png">
+</div>
+
+<div class="card" onclick= "abrircajita('BATMAN (Bruce Wayne)', 'img/bat.gif', 'El Caballero de la Noche. Un detective brillante que utiliza su intelecto, tecnología y voluntad inquebrantable para proteger Gotham, demostrando que no se necesitan superpoderes para ser un héroe.')" >
+    <h2>Top 2</h2>
+    <h3>Batman</h3>
+    <img src="img/batman.png">
+</div>
+
+<div class="card" onclick= "abrircajita('SUPERMAN (Clark Kent)', 'img/super.gif', 'El símbolo máximo de esperanza. Un alienígena con poderes divinos que elige vivir como humano, guiado por una brújula moral inquebrantable y el deseo de hacer siempre lo correcto.')">
+    <h2>Top 3</h2>
+    <h3>Superman</h3>
+    <img src="img/superman.png">
+</div>
+
+<div class="card" onclick= "abrircajita('DEADPOOL (Wade Wilson)', 'img/dead.gif', 'El Mercenario Bocazas. Conocido por su factor de curación regenerativo, su humor negro y su capacidad de romper la cuarta pared para hablar directamente con el lector.')">
+    <h2>Top 4</h2>
+    <h3>Deadpool</h3>
+    <img src="img/dealpool.png">
+</div>
+
+<div class="card" onclick= "abrircajita('SPIDERMAN (Peter Parker)', 'img/spi.gif', 'El héroe más humano de todos. Un joven que equilibra sus grandes responsabilidades con problemas cotidianos, siempre recordando que un gran poder conlleva una gran responsabilidad.')">
+    <h2>Top 5</h2>
+    <h3>Spiderman</h3>
+    <img src="img/spider.png">
+</div>
+
+<div class="card" onclick= "abrircajita('NIGHTWING (Dick Grayson)', 'img/nini.gif', 'El primer Robin que forjó su propio camino. Representa la evolución perfecta del héroe: carismático, ágil y capaz de liderar con una luz propia que rivaliza con la de su mentor.')">
+    <h2>Top 6</h2>
+    <h3>Nightwing</h3>
+    <img src="img/nin.png">
+</div>
+
+<div class="card" onclick= "abrircajita('FLASH (Wally West)', 'img/wally.gif', 'Para muchos, el Flash definitivo. Tras heredar el manto de Barry Allen, Wally dominó la Speed Force como nadie, combinando una velocidad increíble con un gran corazón.')">
+    <h2>Top 7</h2>
+    <h3> The Flash</h3>
+    <img src="img/flash.png">
+</div>
+
+<div class="card" onclick= "abrircajita('GREEN LANTERN (Kyle Rayner)', 'img/kyle.jpg', 'El artista que recibió el último anillo en el momento más oscuro de los Corps. Su voluntad se manifiesta a través de las construcciones más creativas y visualmente impactantes de la galaxia.')">
+    <h2>Top 8</h2>
+    <h3>Green Lantern</h3>
+    <img src="img/linterna.png">
+</div>
+
+<div class="card" onclick= "abrircajita('ROBIN (Damian Wayne)', 'img/damian.gif', 'El hijo de Bruce Wayne y Talia al Ghul. Criado por la Liga de Asesinos, lucha constantemente por reprimir sus instintos violentos para estar a la altura del legado de su padre.')">
+    <h2>Top 9</h2>
+    <h3>Robin</h3>
+    <img src="img/robin.png">
+</div>
+
+<div class="card" onclick= "abrircajita('RAVEN (Rachel Roth)', 'img/ven.gif', 'Una poderosa empática con un origen oscuro. Como hija del demonio Trigon, lucha diariamente para controlar sus emociones y sus vastos poderes mágicos en favor del bien.')">
+    <h2>Top 10</h2>
+    <h3>Raven</h3>
+    <img src="img/raven.png">
+</div>
+
+
+<script>
+    function abrircajita(nom, img, text){
+        document.getElementById("titulo").innerText=nom;
+
+        document.getElementById("imagencajita").src=img;
+
+        document.getElementById("descripcion").innerText=text;
+
+        document.getElementById("cajita").style.display="block";
+     }            
+
+     function cerrarcajita() {
+           document.getElementById("cajita").style.display="none"
+     }           
+</script>
+
+
+
+<div id="cajita"  class="cajita">
+    <h2 id="titulo"></h2>
+    <img id="imagencajita">
+    <p id="descripcion"></p>
+    <button onclick="cerrarcajita()">Ocultar</button>
+</div>
+
+</body>
+</html>
